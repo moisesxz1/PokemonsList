@@ -1,0 +1,34 @@
+<div class="container" *ngIf="pokemon">
+
+    
+
+    <div class="data">
+        <div class="card">
+        <h1><i>Name: </i>{{pokemon.name}}</h1>
+        <h3><i>Height: </i>{{pokemon.height}}</h3>
+        <h3><i>Weight: </i>{{pokemon.weight}}</h3>
+        <h3><i>Base Experience: </i>{{pokemon.base_experience}}</h3>
+        <h3><i>Type: </i>{{pokemon.types[0].type.name}}</h3>
+        <h3><i>Id: </i>{{pokemon.id}}</h3>
+        <br>
+        <hr>
+        
+            <H2><i>Abilities:</i></H2>
+            <h3>{{pokemon.abilities[0].ability.name}}</h3>
+            <h3>{{pokemon.abilities[1].ability.name}}</h3>
+
+            <br>
+            <hr>
+
+            <H2><i>Moves:</i></H2>
+            <h3>{{pokemon.moves[0].move.name}}</h3>
+            <h3>{{pokemon.moves[1].move.name}}</h3>
+            <h3>{{pokemon.moves[2].move.name}}</h3>
+            <h3>{{pokemon.moves[3].move.name}}</h3>
+            <h3>{{pokemon.moves[4].move.name}}</h3>
+        </div>
+
+        
+    </div>
+
+</div>
