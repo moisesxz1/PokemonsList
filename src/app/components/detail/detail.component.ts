@@ -37,7 +37,7 @@ export class DetailComponent implements OnInit {
     this._pokemonService.getPokemon(url).subscribe(
       response => {
         this.pokemon = response;
-        console.log(this.pokemon);
+        
       },
       error => {
         console.log(<any>error);

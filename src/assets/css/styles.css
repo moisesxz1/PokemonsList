@@ -309,3 +309,8 @@ form input[disabled]{
     background: white;
   }
   
+  .PokNotF{
+      background: red;
+      color: white;
+      width: 20%;
+  }
