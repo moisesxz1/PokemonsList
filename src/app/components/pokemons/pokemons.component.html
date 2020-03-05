@@ -2,15 +2,15 @@
     <h2>Pokemons</h2>
 
     <ul>
-        <li *ngFor="let project of pokemons" class="project">
-            <a [routerLink]="['/pokemon', project.url]"> <!--PM: rutaURL, SP: idProyectoAcual-->
+        <li *ngFor="let pokemon of pokemons" class="project">
+            <a [routerLink]="['/pokemon', pokemon.url]"> <!--PM: rutaURL, SP: idProyectoAcual-->
 
                 <div class="image"> <!--mascara-->
                     <img src=""  /> 
 
                 </div>
-                <h3>{{project.name}}</h3>
-                <p>{{project.url}}</p>
+                <h3>{{pokemon.name}}</h3>
+                <p>{{pokemon.url}}</p>
             </a>
         </li>
     </ul>
